@@ -12,7 +12,7 @@ class data_pendidikan_desa extends Model
 
     protected $table = "data_pendidikan_desas";
 
-    protected $filable = [
+    protected $fillable = [
         "nama_sekolah",
         "jumlah_guru",
         "jumlah_murid",

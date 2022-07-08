@@ -33,6 +33,30 @@
             <span class="nav-link-text ms-1">Profil Desa</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-pendidikan-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-pendidikan-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">school</i>
+            </div>
+            <span class="nav-link-text ms-1">Data Pendidikan Desa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-pemerintahan-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-pemerintahan-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">person</i>
+            </div>
+            <span class="nav-link-text ms-1">Struktur Pemerintahan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white {{ (request()->routeIs('admin-berita-desa')) ? 'active bg-gradient-primary' : '' }}" href="{{route('admin-berita-desa')}}">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">receipt_long</i>
+            </div>
+            <span class="nav-link-text ms-1">Berita Desa</span>
+          </a>
+        </li>
 
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Pengaturan Akun</h6>

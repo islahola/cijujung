@@ -40,3 +40,24 @@ Route::delete('desa/agenda/{id}', [App\Http\Controllers\Admin\AgendaController::
 Route::get('desa/profil-desa', [App\Http\Controllers\Admin\ProfilDesaController::class, 'index'])->name('admin-profil-desa');
 Route::get('desa/profil-desa/{id}', [App\Http\Controllers\Admin\ProfilDesaController::class, 'edit'])->name('admin-profil-desa-edit');
 Route::put('desa/profil-desa/{id}', [App\Http\Controllers\Admin\ProfilDesaController::class, 'update'])->name('admin-update-profil-desa');
+
+Route::get('desa/pendidikan', [App\Http\Controllers\Admin\DataPendidikanController::class, 'index'])->name('admin-pendidikan-desa');
+Route::get('desa/pendidikan/tambah', [App\Http\Controllers\Admin\DataPendidikanController::class, 'add'])->name('admin-tambah-pendidikan-desa');
+Route::post('desa/pendidikan', [App\Http\Controllers\Admin\DataPendidikanController::class, 'create'])->name('admin-pendidikan-desa-tambah');
+Route::get('desa/pendidikan/{id}', [App\Http\Controllers\Admin\DataPendidikanController::class, 'edit'])->name('admin-pendidikan-desa-edit');
+Route::put('desa/pendidikan/{id}', [App\Http\Controllers\Admin\DataPendidikanController::class, 'update'])->name('admin-update-pendidikan-desa');
+Route::delete('desa/pendidikan/{id}', [App\Http\Controllers\Admin\DataPendidikanController::class, 'delete'])->name('admin-pendidikan-desa-delete');
+
+Route::get('desa/pemerintahan', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'index'])->name('admin-pemerintahan-desa');
+Route::get('desa/pemerintahan/tambah', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'add'])->name('admin-tambah-pemerintahan-desa');
+Route::post('desa/pemerintahan', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'create'])->name('admin-pemerintahan-desa-tambah');
+Route::get('desa/pemerintahan/{id}', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'edit'])->name('admin-pemerintahan-desa-edit');
+Route::put('desa/pemerintahan/{id}', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'update'])->name('admin-update-pemerintahan-desa');
+Route::delete('desa/pemerintahan/{id}', [App\Http\Controllers\Admin\StrukturPemerintahanController::class, 'delete'])->name('admin-pemerintahan-desa-delete');
+
+Route::get('desa/berita', [App\Http\Controllers\Admin\BeritaController::class, 'index'])->name('admin-berita-desa');
+Route::get('desa/berita/tambah', [App\Http\Controllers\Admin\BeritaController::class, 'add'])->name('admin-tambah-berita-desa');
+Route::post('desa/berita', [App\Http\Controllers\Admin\BeritaController::class, 'create'])->name('admin-berita-desa-tambah');
+Route::get('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'edit'])->name('admin-berita-desa-edit');
+Route::put('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'update'])->name('admin-update-berita-desa');
+Route::delete('desa/berita/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'delete'])->name('admin-berita-desa-delete');
