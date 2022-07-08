@@ -15,7 +15,7 @@ class CreateAgendaDesasTable extends Migration
     {
         Schema::create('agenda_desas', function (Blueprint $table) {
             $table->id();
-            $table->string("nama_agenda");
+            $table->string("nama_agenda")->nullable();
             $table->string("deskripsi");
             $table->boolean("is_active");
             $table->string("user_id");
