@@ -1,8 +1,49 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// bootsrap
+@import 'plugins/bootstrap/functions';
+@import 'plugins/bootstrap/variables';
+@import 'plugins/bootstrap/mixins/breakpoints';
 
 // Variables
-@import 'variables';
+@import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+/* Box Sizing
+--------------------------------------------- */
+
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/sidebar";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+@import "./components/fonts";
+@import "./components/global";
+@import "./components/typography";
+@import "./components/accordion";
+@import "./components/navigation";
+@import "./components/buttons";
+@import "./components/backgrounds";
+@import "./components/icons";
+@import "./components/forms";
+@import "./components/sliders";
+@import "./components/contents";
+@import "./components/lists";
+@import "./components/modals";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+@import "./utilities/accessibility";
+@import "./utilities/helpers";
+@import "./utilities/alignments";

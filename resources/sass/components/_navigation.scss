@@ -1,0 +1,158 @@
+.login__nav {
+    .nav-sigin.active{
+        position: absolute;
+        right: 14px;
+        .btn-dekstop{
+            display:block;
+            height: 80px;
+        }
+        .btn-mobile{
+            display:none;
+        }
+    }
+    .nav-sigin{
+        position: absolute;
+        right: 14px;
+        img{
+            display:none;
+        }
+    }
+    .nav-signup{
+        position: absolute;
+        right: 14px;
+        top:2rem;
+        img{
+            display:none;
+        }
+    }
+    .nav-signup.active{
+        position: absolute;
+        right: 14px;
+        top:3rem;
+        img{
+            display:block;
+            height: 80px;
+        }
+    }
+    position: absolute;
+    left: 43%;
+    z-index: 99;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    .btn:active:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    .btn {
+        color: white;
+        border-radius: 20px;
+        width:100px;
+        margin-top: 1rem;
+    }
+    .btn.active {
+        position :absolute;
+        z-index:10;
+        right :0;
+        top:1.5rem;
+        margin:0;
+        color: $warna2;
+        padding : .4rem .75rem;
+        width: 125px;
+    }
+}
+@include media-breakpoint-down(md) {
+    .login__nav {
+        right:-1.9rem;
+        top:0;
+        .btn-dekstop{
+            display:none;
+            height: 80px;
+        }
+        .btn-mobile{
+            display:block !important;
+            height: 60px;
+        }
+    }
+    .btn {
+        color: $warna1 !important;
+        border-radius: 20px;
+        width:100px;
+        margin-top: 1rem;
+    }
+    .btn.active {
+        position :absolute;
+        z-index:10;
+        right :0;
+        background-color: $warna1;
+        top:1.5rem;
+        margin:0;
+        color: white !important;
+        padding : .4rem .75rem;
+        width: 125px;
+    }
+  }
+
+// burger menu
+nav.homepage{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:99;
+    justify-content:space-between;
+    align-items: center;
+    padding:1rem 5rem;    
+    @include media-breakpoint-down(md) {
+        padding:1.5rem;    
+        .humber{
+            width:35px;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .logo{
+        width:60px;
+        height:60px;
+        border-radius: 50%;
+        background:white;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    img{
+        cursor: pointer;
+        @include media-breakpoint-down(md) {
+           width: 45px;
+        }
+    }
+}
+
+.salon{
+    &__header{
+        background:$warna3;
+        .input-group-text{
+            border: none;
+            border-radius: 90px;
+            background:$cGelap;
+
+        }
+        .form-control{
+            background:$cGelap;
+            border-radius: 90px;
+        }
+        .logo{
+            width: 67px;
+            height: 70px;
+            margin: 0.5rem;
+            img{
+                width:100%;
+                height:100%;
+                object-fit:contain;
+                font-size:35px;
+            }
+        }
+    }
+}

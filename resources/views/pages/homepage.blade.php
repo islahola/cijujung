@@ -10,7 +10,8 @@
     <h3>{{$data_agenda->nama_agenda}}</h3>
     <p>{{$data_agenda->deskripsi}}</p>
 @endforeach
-<a href="/agenda">lihat lebih banyak agenda</a>
+<a href="/agenda" class="btn-info ">lihat lebih banyak agenda olla</a>
+<h1 class="olla">Olla</h1>
 
 @foreach($berita as $data_berita)
     <a href="/baca-berita/{{$data_berita->slug}}" style="">

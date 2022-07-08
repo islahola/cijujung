@@ -1,0 +1,40 @@
+.navbar {
+   position: relative;
+   height: 100%;
+   .container {
+      @include media-breakpoint-down(xl) {
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+      }
+      .navbar-brand {
+         @include media-breakpoint-down(xl) {
+         }
+         img {
+            position: relative;
+            z-index: 2;
+            transition: all .3s ease-in-out;
+            @include media-breakpoint-down(xl) {
+               height: 96px;
+            }
+         }
+      }
+      .navbar-nav{
+         li{
+            margin-right: 1rem;
+            a{
+               font-size: 16px;
+               line-height: 1.75;
+               color: $hitam;
+               font-weight: 600;
+               text-transform: uppercase;
+               &:hover{
+                  color: $biru-2
+               }  
+               i{
+                  margin-right: 4px;
+               }
+            }
+         }
+      }
+   }
+}

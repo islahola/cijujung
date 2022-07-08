@@ -1,0 +1,188 @@
+//   sidebar
+.sidebar{
+       opacity: 0;
+       transition: all 2s;
+        &__section-1{
+            top:0;
+            width: 60vw;
+            height:98vh;
+            left: -100vw;
+            z-index: 100;
+            transition: all 2s;
+            background: url('../../frontend-assets/image/banner/nav-1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            li{
+                img{
+                    width:120px;
+                    height:120px;
+                    border-radius: 50%;
+                    background:white;
+                    margin-top:2rem;
+                }
+                p{
+                    margin-top:.8rem;
+                    color: white;
+                }
+                a{
+                    text-decoration: none;
+                    font-size:34px;   
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size:32px;   
+                        
+                      }  
+                }
+            }
+
+            .sosmed{
+                .icon{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 0.7rem;                    
+                    border-radius: 50%;
+                    background-color: $warna1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            h3,p,i,a{
+                text-decoration: none;
+                color:white;
+            }
+            .alamat{
+                margin-top: -10rem;
+                margin-left: 4rem;
+            }
+            .alamat h3{
+                font-size: 21px;
+            }
+            .alamat p{
+                width: 50%;
+            }
+            .alamat span{
+                font-size: 18px;
+            }
+             .contact{
+                 width: 33%;
+             }
+             .sosmed,.contact{
+                margin-left: 4rem;
+             }
+             
+        }
+        &__section-2.active{            
+            z-index: 99;
+           right: -3rem;
+           transition: right 2s;
+           @include media-breakpoint-down(lg) {
+            width: 100vw;
+            transition: all 2s;
+          }
+           @include media-breakpoint-down(md) {
+            background:$warna1;
+            
+            right: 0;
+            .close{
+                top: 2rem;
+                color: white;
+            }
+          }
+        }
+        &__section-2{
+            .close{
+                cursor: pointer;
+                position: absolute;
+                top: 4rem;
+                color: white;
+                right: 4rem;
+                font-size: 34px;
+            }
+            z-index: 9;
+            position: fixed;
+            height: 106vh;
+            width: 77vw;
+            right: -100vw;
+            transition: all 2s;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            background: url('../../frontend-assets/image/banner/nav-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include media-breakpoint-down(lg) {
+                width: 200vw; 
+                transition: width 2s;
+              }  
+            // ul.list-unstyled{
+            //     width: 53vw;
+            // }
+            // ul li:nth-child(5){
+            //     margin-right: 6.1rem;
+            // }
+            // ul li:nth-child(6){
+            //     margin-right: 10.1rem;
+            // }
+            .justify-content-end{
+                margin-right: 5rem !important;
+            }
+            li{
+                text-align: end;
+                img{
+                    width:120px;
+                    height:120px;
+                    border-radius: 50%;
+                    background:white;
+                    margin-top:2rem;
+                }
+                p{
+                    margin-right:2rem;
+                    margin-top:.8rem;
+                    color: white;
+                }
+                a{
+                    text-decoration: none;
+                    font-size:64px;   
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size:32px;   
+                        
+                      }  
+                }
+                account{
+                    font-size:20px;
+                }
+    
+            }
+       }
+    }
+    @media (max-width: 991.98px){
+        .sidebar__section-2 {
+        width: 0;
+        top:0;
+        height: 100vh;        
+        }
+    }
+   .sidebar.active .sidebar__section-1{
+        left: 0;
+        transition: left 2s;
+        @include media-breakpoint-down(lg) {
+            display: none !important;
+          }
+    }
+   .sidebar.active {
+       left: 0;
+       opacity: 1;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       z-index: 1000;
+       position: fixed;
+       background-color: black;
+    }

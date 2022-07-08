@@ -1,0 +1,83 @@
+footer {
+	position: relative;
+	width: 100%;
+	background-color: $biru;
+  color: white;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+    .container{
+        @include media-breakpoint-down(sm) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include media-breakpoint-only(md) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+// @media screen and (min-height:1073px){
+// 	position: absolute;
+// 	bottom: 0;
+// }
+	ul{
+		padding-left: 0;
+		li{
+			list-style: none;
+			display: inline;
+			margin-right: 0.7rem;
+			&:not(:last-child):after {
+				content: "|";
+				margin-left: 0.7rem;
+			}
+		}
+	}
+	
+	.sosmed{
+        @include media-breakpoint-down(sm) {
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+        @include media-breakpoint-only(md) {
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+		i{
+			color: rgba(255,255,255,0.7);
+			font-size: 25px;
+			margin-right: 0.8rem;
+		}
+		.fa-facebook{
+			&:hover{
+				color: $fb;
+			 }
+		}
+		.fa-youtube{
+			&:hover{
+				color: $yt;
+			 }
+		}
+		.fa-instagram{
+			&:hover{
+				color: #d6249f;
+			 }
+		}
+		.fa-tiktok{
+			&:hover{
+				color: black
+			 }
+		}
+		.fa-telegram-plane{
+			&:hover{
+				color: $tele;
+			 }
+		}
+	}
+	.web-credit{
+        @include media-breakpoint-down(sm) {
+			justify-content: center !important;
+		}
+        @include media-breakpoint-only(md) {
+			justify-content: center !important;
+		}
+	}
+}

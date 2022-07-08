@@ -1,0 +1,76 @@
+#wrapper{
+    &.home{
+       main{
+           margin-top: 230px;
+           @include media-breakpoint-down(sm) {
+                margin-top: 61px;
+           }
+           @include media-breakpoint-only(md) {
+                margin-top: 61px;
+           }
+       }
+    }
+
+    &:not(.home){
+        main{
+            margin-top: 70px;
+            @include media-breakpoint-down(sm) {
+                 margin-top: 61px;
+            }
+            @include media-breakpoint-only(md) {
+                 margin-top: 61px;
+            }
+        }
+     }
+
+    &.step-form{
+        main{
+            .bg-intro-form{
+                position: absolute;
+                background-color: $biru-2;
+                height: 700px;
+                width: 100%;
+                @include media-breakpoint-down(sm) {
+                     background-color: transparent;
+                }
+                @include media-breakpoint-only(md) {
+                     background-color: transparent;
+                }
+
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background: url('../images/pattern-bg.png') no-repeat;
+                    right: -382px;
+                    top: 0;
+                    width: 772px;
+                    height: 772px;
+                    @include media-breakpoint-down(sm) {
+                        transform: scale(0.6);
+                        top: -50%;
+                    }
+                    @include media-breakpoint-only(md) {
+                        transform: scale(0.6);
+                        top: -50%;
+                    }
+                }
+        
+                &:after{
+                    content: '';
+                    position: absolute;
+                    background: url('../images/pattern-bg.png') no-repeat;
+                    left: -382px;
+                    top: 375px;
+                    width: 772px;
+                    height: 772px;
+                    @include media-breakpoint-down(sm) {
+                        content: none;
+                    }
+                    @include media-breakpoint-only(md) {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}

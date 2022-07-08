@@ -1,0 +1,88 @@
+
+.footer{
+    height: 100vh;
+    background-position: center;
+    background-image: url("../../frontend-assets/image/banner/footer.png");
+    background-size: cover;
+    .banner{
+        @include media-breakpoint-down(lg) {
+            justify-content: center !important;
+
+           }
+    }
+    @include media-breakpoint-down(md) {
+        background-image: url("../../frontend-assets/image/banner/mobile-pink.png");
+        
+      }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../../frontend-assets/image/banner/ipad-pink.png");
+        
+      }
+    a{
+        color: #683434;
+        text-decoration:none;
+    }
+    .kontak{
+        @include media-breakpoint-down(lg) {
+            text-align:center !important;
+            margin-right: 0 !important;
+          
+           }
+        @include media-breakpoint-down(sm) {
+            margin-top:31rem;
+           }
+           @media (max-width: 360px) 
+           {
+            margin-top:24rem;
+           }
+        @include media-breakpoint-only(md) {
+            margin-top:44rem;
+           }
+    }
+    .mascot{
+        width: 398px;
+        img{
+            width: 100%;
+        }
+    }
+    .sosmed{
+        width: 246px;
+        margin-left: 12rem;
+        @include media-breakpoint-down(lg) {
+         margin: 0 auto;
+        }
+      
+        i{
+            background:#E1848E;
+            margin:auto;
+            color:white;
+            border-radius:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:40px;
+            height:40px;
+        }
+    }
+    .contact{
+        width:300px;
+        @include media-breakpoint-down(lg) {
+            justify-content: center !important;
+            width: 100%;
+            padding-right: .7rem;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+           }
+    }
+}
+.footer.footer-klinik{
+    background-image: url("../../frontend-assets/image/banner/klinik.png");
+    @include media-breakpoint-down(md) {
+        background-image: url("../../frontend-assets/image/banner/mobile.png");
+        
+      }
+    @include media-breakpoint-down(lg) {
+        background-image: url("../../frontend-assets/image/banner/ipad-coklat.png");
+        
+      }
+}
