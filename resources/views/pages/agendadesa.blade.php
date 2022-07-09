@@ -1,4 +1,9 @@
-@foreach($agenda as $data_agenda)
-    <h3>{{$data_agenda->nama_agenda}}</h3>
-    <p>{{$data_agenda->deskripsi}}</p>
-@endforeach
+@extends('layouts.partials.body')
+@section('content')
+
+<div>
+    @include('layouts.partials.contentseluruhagendadesa')
+    @include('layouts.partials.footer')
+
+</div>
+@endsection
