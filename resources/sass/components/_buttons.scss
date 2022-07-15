@@ -41,10 +41,29 @@
     }
 }
 .btn.btn-primary {
-    border-radius: 10px;
     color: #FFFFFF;
     border: none;
-    background-color: #e1848e;
+    background-color: #8CC63F;
+    min-width: 133px;
+    min-height: 35px;
+    @include media-breakpoint-down(md) {
+        color: #FFFFFF !important;
+    }
+}
+.btn.btn-fb {
+    color: #FFFFFF;
+    border: none;
+    background-color: #3f63c6;
+    min-width: 133px;
+    min-height: 35px;
+    @include media-breakpoint-down(md) {
+        color: #FFFFFF !important;
+    }
+}
+.btn.btn-yt {
+    color: #FFFFFF;
+    border: none;
+    background-color: #FF0000;
     min-width: 133px;
     min-height: 35px;
     @include media-breakpoint-down(md) {

@@ -1,13 +1,59 @@
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
 ) !default;
 // color
 $warna1: #e1848e; //pink
 $warna2: #cb8967; //coklat tua
 $warna3: #f3ebe0; //cream
-$cGelap: #ECCBAA; //creamgelap
+$cGelap: #eccbaa; //creamgelap
+
+/**
+ * Variables
+ */
+
+// Colors
+//...............
+$primary: #1a2b65;
+$secondary: #ec242e;
+
+$grey-blue: #677c91;
+$brownish-grey: #5a5a5a;
+$greyish-brown: #3c3c3c;
+$brownish-pink: #d17a7a;
+$brownish-grey-two: #847271;
+$dusty-red: #b44d50;
+$brownish-grey-three: #887171;
+$black: #000000;
+$slate: #52697f;
+$slate-two: #485f76;
+$brownish-grey-four: #817272;
+$dark-grey-blue: #284459;
+$white: #ffffff;
+$brownish: #a65353;
+$dark-grey-blue-two: #2f4357;
+$white-two: #f6f6f6;
+$very-light-pink: #d8d8d8;
+$grey-blue-two: #647d95;
+$off-blue: #5c81a5;
+$red: #ff0000;
+$dark-slate-blue: #1d445b;
+
+// Fonts
+//...............
+$primary-font: "Nunito Sans", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+// Fonts Weight
+//...............
+$font_thin: 100;
+$font_smthin: 200;
+$font_light: 300;
+$font_regular: 400;
+$font_smbold: 600;
+$font_bold: 700;
+$font_black: 900;

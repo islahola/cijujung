@@ -20,15 +20,12 @@
     <script type="text/javascript" src="{{asset('/frontend-assets/js/jquery.min.js')}}"></script>
     
     <!-- Styles -->
-    <link href="{{ asset('/frontend-assets/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('/frontend-assets/css/app.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('/frontend-assets/css/app.css') }}" rel="stylesheet"> -->
+    <link href="{{ asset('/frontend-assets/olla/app.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('frontend-assets/css/fontawesome.min.css')}}" />
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/swiper.min.css')}}" />
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('/frontend-assets/css/aldi.css')}}" />
-
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/bootstrap-reboot.min.css.map')}}" />
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/bootstrap.min.css')}}" />    
-
 
 </head>

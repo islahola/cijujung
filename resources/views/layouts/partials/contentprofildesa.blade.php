@@ -1,3 +1,11 @@
+@include('layouts.partials.heroTentang')
+@include('layouts.partials.sejarah')
+@include('layouts.partials.potensi')
+@include('layouts.partials.keanggotaan')
+@include('layouts.partials.misi')
+
+<!-- ini nanti buat dimasing2 page -->
+<!-- 
 <img src="{{$profil->foto_desa}}" alt="">
 <p>{{$profil->nama_desa}}</p>
 <p>{{$profil->sejarah}}</p>
@@ -11,4 +19,4 @@
     <p>{{$data->tempat_lahir}}, {{$data->tanggal_lahir}}</p>
     <p>{{$data->pendidikan}}</p>
     <p>{{$data->nip}}</p>
-@endforeach
+@endforeach -->

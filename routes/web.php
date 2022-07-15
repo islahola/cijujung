@@ -24,6 +24,12 @@ Route::get('/agenda', [App\Http\Controllers\Frontend\agendaController::class, 's
 
 Route::get('/profil-desa', [App\Http\Controllers\Frontend\profilController::class, 'index'])->name('profil-desa');
 
+Route::get('/potensi', [App\Http\Controllers\Frontend\potensiController::class, 'index'])->name('potensi');
+
+Route::get('/tentang', [App\Http\Controllers\Frontend\tentangController::class, 'index'])->name('tentang');
+
+Route::get('/misi', [App\Http\Controllers\Frontend\misiController::class, 'index'])->name('misi');
+
 Route::get('/data-desa', [App\Http\Controllers\Frontend\dataDesaController::class, 'index'])->name('data-desa');
 
 // Admin
