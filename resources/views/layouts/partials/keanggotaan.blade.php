@@ -3,7 +3,7 @@
   <div class="list-anggota">
     <div class="col-6 mt-5 d-flex flex-column align-items-center justify-content-center mx-auto">
       <div class="keanggotaan__image pb-3">
-        <img  src="{{asset('/frontend-assets/image/foto/presiden.png')}}"  alt="kepala desa cijujung">
+        <img  src="{{asset('/frontend-assets/image/foto/presiden.PNG')}}"  alt="kepala desa cijujung">
       </div> 
       <h5>Nama anggota</h5>
       <p>Jabatan</p>
@@ -11,14 +11,14 @@
     <div class="d-flex ">
       <div class="col d-flex flex-column align-items-center justify-content-center ">
         <div class="keanggotaan__image pb-3">
-          <img src="{{asset('/frontend-assets/image/foto/presiden.png')}}"  alt="wakil kepala desa cijujung">
+          <img src="{{asset('/frontend-assets/image/foto/presiden.PNG')}}"  alt="wakil kepala desa cijujung">
         </div>
         <h5>Nama anggota</h5>
         <p>Jabatan</p>
       </div>
       <div class="col d-flex flex-column align-items-center justify-content-center">
         <div class="keanggotaan__image pb-3">
-          <img  src="{{asset('/frontend-assets/image/foto/presiden.png')}}"  alt="bendahara">
+          <img  src="{{asset('/frontend-assets/image/foto/presiden.PNG')}}"  alt="bendahara">
         </div>
         <h5>Nama anggota</h5>
         <p>Jabatan</p>
