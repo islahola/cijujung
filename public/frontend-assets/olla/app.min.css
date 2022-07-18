@@ -867,8 +867,8 @@ ol li {
 
 @media (max-width: 575.98px) {
   .nav-brand {
-    max-width: 93px;
-    min-width: 93px;
+    max-width: 222px;
+    min-width: 222px;
   }
 }
 
@@ -912,7 +912,7 @@ ol li {
   padding: 0;
 }
 
-.nav-toggle {
+.nav- {
   width: 20px;
   height: 16px;
   padding: 0;
@@ -921,7 +921,7 @@ ol li {
   cursor: pointer;
 }
 
-.nav-toggle:before {
+.nav-:before {
   content: "";
   position: absolute;
   width: 15px;
@@ -950,6 +950,28 @@ ol li {
 
 .nav-menus-wrapper.nav-show {
   display: block !important;
+}
+
+.nav-toggle {
+  width: 20px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-toggle:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: .625rem;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-box-shadow: 0 0.4em 0 0 #000000, 5px 0em 0 0 #000000, 0px 0.8em 0px 0 #000000;
+          box-shadow: 0 0.4em 0 0 #000000, 5px 0em 0 0 #000000, 0px 0.8em 0px 0 #000000;
 }
 
 .navigation-portrait .nav-toggle {
@@ -1625,12 +1647,6 @@ ol li {
           transform: translateY(0);
 }
 
-@media (max-width: 575.98px) {
-  .nav-other > li:first-child {
-    display: none !important;
-  }
-}
-
 .nav-other > li > .dropdown-menu {
   display: block;
   visibility: hidden;
@@ -2272,7 +2288,8 @@ ol li {
     text-align: center;
   }
   .hero .wrapper .keterangan h5 {
-    display: none;
+    font-size: 23px;
+    font-weight: bold;
   }
 }
 
@@ -2314,9 +2331,22 @@ ol li {
   width: 90% !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
+  .destinasi .destinasi__pc {
+    display: none !important;
+  }
   .destinasi .col {
     margin-top: 2rem;
+  }
+}
+
+.swiperdestinasi {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .swiperdestinasi {
+    display: block;
   }
 }
 
@@ -2330,8 +2360,18 @@ ol li {
   }
 }
 
-.col-6.bannner img {
+.home-agenda .bannner img {
   width: 100%;
+}
+
+.map p {
+  text-align: justify;
+}
+
+@media (max-width: 991.98px) {
+  .map h3 {
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -2352,6 +2392,11 @@ ol li {
   }
 }
 
+.map .pc iframe {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 991.98px) {
   .map .pc {
     width: 300px;
@@ -2359,10 +2404,6 @@ ol li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .map .pc iframe {
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -2384,6 +2425,12 @@ ol li {
 
 .data-penduduk i {
   font-size: 32px;
+}
+
+@media (max-width: 575.98px) {
+  .data-penduduk .col-lg-4.col-md-4.col-sm-12 {
+    padding-bottom: 2rem;
+  }
 }
 
 .moto {
@@ -2524,6 +2571,10 @@ ol li {
   background-color: #63813B;
 }
 
+.info .kecamatan {
+  display: none;
+}
+
 .info__image {
   width: 150px;
 }
@@ -2544,6 +2595,9 @@ ol li {
 }
 
 @media (max-width: 575.98px) {
+  .info .kecamatan {
+    display: block;
+  }
   .info h4 {
     text-align: center;
   }

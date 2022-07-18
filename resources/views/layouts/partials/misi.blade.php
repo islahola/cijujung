@@ -2,7 +2,7 @@
   <h1 class="pb-4">Visi dan Misi Desa Cijujung</h1>
   <div class="misi__wrap text-center">
     <h2>VISI</h2>
-    <h5>“Terbangunnya Tata Kelola Pemerintahan Desa yang baik dan bersih guna terwujudnya kehidupan masyarakat desa yang adil, makmur dan sejahtera serta berbudaya dan berakhlaq mulia”</h5>
+    <p class="">“Terbangunnya Tata Kelola Pemerintahan Desa yang baik dan bersih guna terwujudnya kehidupan masyarakat desa yang adil, makmur dan sejahtera serta berbudaya dan berakhlaq mulia”</p>
   </div>
   <div class="misi__wrap mt-4 ">
     <h2 class=" text-center">Misi</h2>

@@ -10,7 +10,8 @@
                 margin-top:.5rem;
                 text-align:center;
                 h5{
-                    display: none;
+                    font-size: 23px;
+                    font-weight: bold;
                 }
             }
         }
@@ -36,15 +37,24 @@
 .destinasi{
     background-color: #547726;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25), 0px -5px 20px 5px rgba(0, 0, 0, 0.25);
-   
     &__wrap{
         width: 90% !important;
     }
-    .col{
-        @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(sm) {
+        .destinasi__pc{
+            display:none !important;
+        }
+        .col{
             margin-top: 2rem;
-          }
+        }
     }
+}
+.swiperdestinasi{
+    display: none;
+        @include media-breakpoint-down(sm) {
+            display: block;
+
+          }
 }
 .home-agenda{
     margin-top: 2rem;
@@ -53,12 +63,22 @@
            padding: 2rem;
           }
     }
+    .bannner img {
+        width: 100%;
+        
+      }
 }
-.col-6.bannner img {
-    width: 100%;
-    
-  }
+
 .map{
+    p{
+        text-align:justify;
+       
+    }
+    h3{
+        @include media-breakpoint-down(lg) {
+           margin-top:1rem; 
+        }
+    }
     &__wrap{
         @include media-breakpoint-down(lg) {
            display: flex;
@@ -68,14 +88,14 @@
         }
     }
     .pc{
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
         @include media-breakpoint-down(lg) {
             width: 300px;
             height: 200px;
             display:flex;
-            iframe{
-                width: 100%;
-                height: 100%;
-            }
         }
     }
 }
@@ -94,6 +114,12 @@
     i{
         font-size: 32px;
     }
+    @include media-breakpoint-down(sm) {
+        .col-lg-4.col-md-4.col-sm-12{
+            padding-bottom:2rem;
+        }
+    }
+    
   }
 
   .moto{
@@ -207,6 +233,9 @@
 }
 .info{
     background-color: #63813B;
+    .kecamatan{
+        display: none;
+    }
     &__image{
         width: 150px;
         img{
@@ -225,6 +254,9 @@
         }
     }
     @include media-breakpoint-down(sm) {
+        .kecamatan{
+            display: block;
+        }
         h4{
             text-align: center;
         }

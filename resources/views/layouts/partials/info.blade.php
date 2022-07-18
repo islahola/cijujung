@@ -8,6 +8,7 @@
       </div>
       <div class="col flex-column  d-flex info__ket  ">
         <h4 class="text-white">Desa Cijujung</h4>
+        <h5  class="text-white kecamatan">Kecamatan Cibungbulang</h5>
         <p class="text-white">Jl. KHA. Rasyid Rt 008 Rw 004 <br>
           Kecamatan Cibungbulang Kabupaten bogor Provinsi Jawa barat <br>
           Kode Pos 28751</p>

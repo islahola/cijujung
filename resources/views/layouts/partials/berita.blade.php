@@ -1,8 +1,8 @@
 <!-- Berita utama -->
-<div class="berita container  py-5">
-    <h3 class="pb-4">Berita Utama</h3>
+<div class="berita container  py-5 overflow-hidden">
+    <h3 class="pb-4 text-center">Berita Utama</h3>
     <div class="row ">
-        <div class="berita__utama col-md-12 col-lg-6 col-sm-12 ">     
+        <div class="berita__utama mx-auto col-10 col-md-12 col-lg-6 col-sm-10 ">     
                 <a class="link-berita  text-decoration-none"  style="">
                     <div class="berita__image mx-auto  py-3">
                         <img src="https://www.ugm.ac.id/galleries/crop/16168--730x420px.jpg" alt="cijujung berita cijujung kegiatan">
@@ -12,9 +12,10 @@
                 
                 </a>
         </div>
-        <div class="mt-2 col-md-12 col-lg-5 col-sm-12 ms-4">
+        <div class="mt-2 col-8 col-md-8 col-lg-5 col-sm-8 ms-4">
             @foreach($berita as $data_berita)
             <div class="berita__daftar">
+                test
                 <a href="/baca-berita/{{$data_berita->slug}}" class="text-decoration-none" style="">
                     <img src="{{ asset('upload/' . $data_berita->gambar_berita) }}" alt="">
                     <h5>{{$data_berita->judul}}</h4>
@@ -22,8 +23,7 @@
                 </a>
             </div>
             @endforeach
-            <a href="/berita" class="text-decoration-none">
-                lihat lebih banyak berita <i class="fas fa-arrow-right"></i> </a>
+            <a href="/berita" class="text-decoration-none ps-2">lihat lebih banyak berita <i class="fas fa-arrow-right"></i> </a>
           
         </div>
         <!-- daftar berita -->
