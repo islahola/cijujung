@@ -7,12 +7,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Website Desa') }}</title>
+    {!! SEO::generate() !!}
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <link rel="shortcut icon" href="{{ asset('/frontend-assets/image/logo/belumada.png') }}">
+    <link rel="shortcut icon" href="{{ asset('/frontend-assets/image/logo/logoContoh.png') }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

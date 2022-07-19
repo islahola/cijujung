@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
