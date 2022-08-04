@@ -28,6 +28,7 @@ class AgendaController extends Controller
     {
         // validasi inputannya udah sesuai belum
         $this->validate($request, [
+            'gambar_agenda' => 'required|mimes:jpg,jpeg,bmp,png|max:5012',
             'nama_agenda' => 'required',
             'deskripsi' => 'required',
         ]);
@@ -44,7 +45,6 @@ class AgendaController extends Controller
     public function edit($id)
     {
         $agenda = agenda_desa::find($id);
-
         return view("admin.agenda.edit", [
             'agenda' => $agenda
         ]);
@@ -52,9 +52,9 @@ class AgendaController extends Controller
 
     public function update(Request $request, $id){
         $agenda = agenda_desa::find($id);
-
         $agenda->update([
             'nama_agenda' => $request->nama_agenda,
+            'gambar_agenda' => $request->file('gambar_agenda')->store('agenda_desa'),
             'deskripsi' => $request->deskripsi,
             'is_active' => $request->is_active,  
             'user_id' => Auth::id(),

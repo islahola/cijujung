@@ -19,6 +19,7 @@
                     <tr>
                       <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">No</th>
                       <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Nama Agenda</th>
+                      <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Gambar Agenda</th>
                       <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Pembuat</th>
                       <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Tanggal Pembuatan</th>
                       <th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Status</th>
@@ -36,6 +37,11 @@
                       <td>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="text-center mb-0 text-sm">{{ $data->nama_agenda }}</h6>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                        <img src="{{ asset('upload/' . $data->gambar_agenda) }}" width=100 alt="" center>
                         </div>
                       </td>
                       <td>

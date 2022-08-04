@@ -18,6 +18,11 @@
                         <input type="text" name="nama_agenda" class="form-control" id="exampleFormControlInput1" value="{{$agenda->nama_agenda}}">
                     </div>
                     <div class="form-group">
+                      <img src="{{ asset('upload/' . $agenda->gambar_agenda) }}" width="200" alt=""><br>
+                      <label for="exampleFormControlFile1">Gambar Agenda</label>
+                      <input type="file" name="gambar_agenda" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlSelect1">Status</label>
                         <select name="is_active" class="form-control" id="exampleFormControlSelect1">
                           <option value="1" {{$agenda->is_active == '1' ? 'selected' : ''}}>Publish</option>

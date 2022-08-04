@@ -14,6 +14,7 @@ class agenda_desa extends Model
     
     protected $fillable = [
         "nama_agenda",
+        "gambar_agenda",
         "deskripsi",
         "is_active",
         "user_id"

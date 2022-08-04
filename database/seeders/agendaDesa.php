@@ -16,6 +16,7 @@ class agendaDesa extends Seeder
     {
         DB::table('agenda_desas')->insert([
             'nama_agenda' => '17 agustus',
+            'gambar_agenda' => 'rqmLYTB95Ow9MjmkNXJIZAheLAe3xcXNq4cWdsgL.jpg',
             'deskripsi' => 'acara tahunan perayaan 17 agustusan',
             'is_active' => true,
             'user_id' => 1

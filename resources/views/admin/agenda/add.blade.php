@@ -13,6 +13,10 @@
                 <form class="mx-4" method="post" action="{{route('admin-agenda-tambah')}}" enctype="multipart/form-data">
                 @csrf
                     <div class="form-group">
+                      <label for="exampleFormControlFile1">Gambar Agenda</label>
+                      <input type="file" name="gambar_agenda" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlInput1">Nama Agenda</label>
                         <input type="text" name="nama_agenda" class="form-control" id="exampleFormControlInput1">
                     </div>

@@ -16,10 +16,12 @@ class homepageController extends Controller
         SEOTools::setDescription('desa cijujung merupakan desa dengan banyak wisata yang menarik dan terletak di jawa barat, bogor ');
         SEOTools::opengraph()->setUrl('https://cijujung.herokuapp.com/');
         $agenda = agenda_desa::paginate(3);
-        $berita = berita_desa::paginate(6);
+        $berita = berita_desa::paginate(6)->sortByDesc('id');
+        $beritaTerbaru = berita_desa::paginate(1)->sortByDesc('id');
         return view("pages.homepage",[
             'agenda' => $agenda,
-            'berita' => $berita
+            'berita' => $berita,
+            'beritaTerbaru' => $beritaTerbaru,
         ]);
     }
 }

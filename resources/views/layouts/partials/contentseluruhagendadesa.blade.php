@@ -2,14 +2,14 @@
 <div class="berita-utama container mt-5 pb-5  ">
     <h3>Agenda Desa Cijujung</h3>
     @foreach($agenda as $data_agenda)
-        <div class="berita-utama-wrap col-9 p-2 d-flex justify-content-center mt-5 mx-auto">
+        <div class="berita-utama-wrap col-9 p-2 px-5     d-flex justify-content-center mt-5 mx-auto">
             <a class="text-decoration-none" style="">
                 <h4>{{$data_agenda->nama_agenda}}</h4>
-                <p>22-02-2022</p>
+                <p>{{$data_agenda->created_at}}</p>
                 <div class="detail-img">
-                    <img src="https://www.ugm.ac.id/galleries/crop/16168--730x420px.jpg" alt="cijujung berita cijujung kegiatan">
+                    <img src="{{ asset('upload/' . $data_agenda->gambar_agenda) }}" alt="{{$data_agenda->judul}}">
                 </div>
-                <p>{{$data_agenda->deskripsi}}</p>
+                <p class="mt-3 blockquote-footer fs-6 ">{{$data_agenda->deskripsi}}</p>
             </a>
         </div>
     @endforeach
