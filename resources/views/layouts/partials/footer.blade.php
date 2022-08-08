@@ -14,7 +14,7 @@
                 <h3>Kontak Kami</h3>
                 <span class="">
                     <a class="text-white text-decoration-none" href="https://api.whatsapp.com/send?phone=6282133336363" target="_blank" class="mr-3"><i class="fab fa-whatsapp mr-2"></i> (62) 821 3333 6363</a>
-                    <a class="text-white text-decoration-none"  href="mailto:hello@myeducationrepublic.com" target="_blank"><i class="fas fa-envelope ms-2"></i> hello@desaCijujung.com</a>
+                    <a class="text-white text-decoration-none"  href="mailto: dscijujung@gmail.com" target="_blank"><i class="fas fa-envelope ms-2"></i>  dscijujung@gmail.com</a>
                 </span>
             </div>
             <div class="col-md-12 col-lg-3">

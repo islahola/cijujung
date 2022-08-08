@@ -3,7 +3,7 @@
     <div class="row  align-items-center info__wrap ">
       <div class="col  py-4 d-flex justify-content-center">
         <div class="info__image">
-          <img src="{{asset('/frontend-assets/image/logo/exp.png')}}" alt="logo cijujung">
+          <img src="{{asset('/frontend-assets/image/logo/logo.png')}}" alt="logo cijujung">
         </div>
       </div>
       <div class="col flex-column  d-flex info__ket  ">
@@ -13,16 +13,16 @@
           Kecamatan Cibungbulang Kabupaten bogor Provinsi Jawa barat <br>
           Kode Pos 28751</p>
           <span class="">
-                    <a class="text-white text-decoration-none" href="https://api.whatsapp.com/send?phone=6282133336363" target="_blank" class="mr-3"><i class="fab fa-whatsapp mr-2"></i> (62) 821 3333 6363</a>
-                    <a class="text-white text-decoration-none"  href="mailto:hello@cijujung.com" target="_blank"><i class="fas fa-envelope ms-2"></i> hello@Cijujung.com</a>
+                    <a class="text-white text-decoration-none" href="https://api.whatsapp.com/send?phone=6281519900010" target="_blank" class="mr-3"><i class="fab fa-whatsapp mr-2"></i> (62) 821 3333 6363</a>
+                    <a class="text-white text-decoration-none"  href="mailto:hello@cijujung.com" target="_blank"><i class="fas fa-envelope ms-2"></i> dscijujung@gmail.com</a>
                 </span>
       </div>
       <div class="col d-flex align-items-center  flex-column kontak">
         <div class="fb">
-          <a class="btn btn-fb ">Facebook</a>
+          <a class="btn btn-fb " href="https://www.youtube.com/channel/UCALx5xpVIPb_6nkjo02GcGg" target="_blank"  >Facebook</a>
         </div>
         <div class="fb mt-3 ">
-          <a class="btn btn-yt">Youtube</a>
+          <a class="btn btn-yt" href="https://www.youtube.com/channel/UCALx5xpVIPb_6nkjo02GcGg" target="_blank">Youtube</a>
         </div>
        
       </div>

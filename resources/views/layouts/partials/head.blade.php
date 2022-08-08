@@ -24,6 +24,7 @@
     <!-- Styles -->
     <!-- <link href="{{ asset('/frontend-assets/css/app.css') }}" rel="stylesheet"> -->
     <link href="{{ asset('/frontend-assets/olla/app.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/frontend-assets/olla/custom.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('frontend-assets/css/fontawesome.min.css')}}" />
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/swiper.min.css')}}" />
     <link rel="stylesheet" href="{{asset('/frontend-assets/css/swiper.min.css')}}" />

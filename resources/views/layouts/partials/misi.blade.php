@@ -2,17 +2,16 @@
   <h1 class="pb-4">Visi dan Misi Desa Cijujung</h1>
   <div class="misi__wrap text-center">
     <h2>VISI</h2>
-    <p class="">“Terbangunnya Tata Kelola Pemerintahan Desa yang baik dan bersih guna terwujudnya kehidupan masyarakat desa yang adil, makmur dan sejahtera serta berbudaya dan berakhlaq mulia”</p>
+    <h5 class="">“Mewujudkan Desa Cijujung yang maju, sejahtera berdasarkan iman dan taqwa.”</h5>
   </div>
   <div class="misi__wrap mt-4 ">
     <h2 class=" text-center">Misi</h2>
-    <ol>
-      <li>Meningkatkan tata pemerintahan yang demokratis, trasparan, akuntabel, efisien dan efektif</li>
-      <li>Meningkatkan perekonomian pedesaan yang memiliki daya saing berbasis pada BUMDes dan Teknologi, baik pertanian, perikanan, perkebunan dan home industry</li>
-      <li>Meningkatkan sumber daya manusia yang sehat (kesehatan), cerdas (Pendidikan), agamis (Keagamaan), dan bermoral (Budaya)</li>
-      <li>Meningkatkan pembangunan ifrastruktur pedesaan yang terarah dan berkualitas</li>
-      <li>Meningkatkan Peran Kelembagaan dan Masyarakat Desa dalam mendorong pembangunan Desa</li>
-      <li>Meningkatkan system keamanan lingkungan masyarakat desa</li>
-    </ol>
+      <div class="text-center">
+        <p class="fs-5">Meningkatkan partisipasi masyarakat dalam pembangunan Desa Cijujung.</p>
+        <p  class="fs-5">Meningkatkan kesehatan masyarakat dan pngkungan.</p>
+        <p  class="fs-5">Peningkatan perekonomian masyarakat Desa Cijujung</p>
+        <p  class="fs-5">Menyelenggarakan pelayananan pemerintahan yang baik, ramah dan cepat.</p>
+        <p  class="fs-5">Meningkatkan kerjasama dengan semua lapisan masyarakat.</p>
+       </div>
   </div>
 </div>

@@ -1,0 +1,32 @@
+
+  .destinasi {
+    background: url("../../frontend-assets/image/banner/bannerprofil.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -2rem;
+    overflow: hidden  ;
+  }
+  .info {
+    margin-top: 1rem;
+    background: url("../../frontend-assets/image/banner/bannerprofil.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -2rem;
+    overflow: hidden  ;
+  }
+  .wrap-gambar{
+    margin:1rem auto;
+    width: 10rem;
+    height: 15rem;
+  }
+  .wrap-gambar img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .sejarah ol li{
+    font-size: 1rem;
+  }
+  .potensi ol li{
+    font-size: 1rem;
+  }

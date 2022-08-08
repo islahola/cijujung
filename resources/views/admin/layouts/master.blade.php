@@ -37,7 +37,7 @@
                     document.write(new Date().getFullYear())
                     </script>,
                     <a href="" class="font-weight-bold" target="_blank">Website Desa</a>
-                    Karehkel.
+                    Cijujung.
                 </div>
                 </div>
             </div>

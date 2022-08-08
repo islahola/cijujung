@@ -13,6 +13,9 @@
           <div class="swiper-slide ">
             <img src="{{asset('/frontend-assets/image/banner/banner1.jpg')}}" alt="">
           </div>
+          <div class="swiper-slide ">
+            <img src="{{asset('/frontend-assets/image/banner/banner1.jpg')}}" alt="">
+          </div>
           <div class="swiper-slide">          
             <img src="{{asset('/frontend-assets/image/banner/banner1.jpg  ')}}" alt="">
           </div>

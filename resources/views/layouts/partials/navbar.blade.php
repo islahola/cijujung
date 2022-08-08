@@ -38,7 +38,7 @@
                            <a href="{{ route('agenda') }}">Agenda</a>
                         </li>
                         <li>
-                           <a href="https://api.whatsapp.com/send?phone=6282133336363" target="_blank">Kontak Kami</a>
+                           <a href="https://api.whatsapp.com/send?phone=6281519900010" target="_blank">Kontak Kami</a>
                         </li>
                      </ul>
                      <ul class="nav-other">
@@ -84,7 +84,22 @@
                         <li>
                            <a href="https://api.whatsapp.com/send?phone=6288971206673" target="_blank">Kontak Kami</a>
                         </li>
-                     
+
+                        @guest
+                           @if (Route::has('login'))
+                                 <!-- <li ><a href="{{ route('login') }}">Masuk</a></li> -->
+                           @endif
+                           @else
+                           <li ><a href="{{route('admin-dashboard')}}">Dashboard Admin</a></li>
+                           <li><a href="{{ route('logout') }}"
+                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    {{ __('Keluar') }}
+                                 </a>
+                           </li>
+                                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                 @csrf
+                                 </form>
+                           @endguest
                      </ul>
                   </div>
                </div>
