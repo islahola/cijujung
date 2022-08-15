@@ -12,10 +12,10 @@
             </div>
             <div class="col-md-12 col-lg-5 contact-us">
                 <h3>Kontak Kami</h3>
-                <span class="">
+                <div class="d-flex">
                     <a class="text-white text-decoration-none" href="https://api.whatsapp.com/send?phone=6282133336363" target="_blank" class="mr-3"><i class="fab fa-whatsapp mr-2"></i> (62) 821 3333 6363</a>
                     <a class="text-white text-decoration-none"  href="mailto: dscijujung@gmail.com" target="_blank"><i class="fas fa-envelope ms-2"></i>  dscijujung@gmail.com</a>
-                </span>
+                </div>
             </div>
             <div class="col-md-12 col-lg-3">
                 <h3>Follow US</h3>
