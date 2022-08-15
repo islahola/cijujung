@@ -21,8 +21,8 @@
 
 footer {
   position: relative;
-  width: 100%;
-  background: url("../../frontend-assets/image/banner/bannerprofil.png");
+  background: url("../../frontend-assets/image/banner/texture.png");
+  background-color: #63813B;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -2rem;
@@ -2435,7 +2435,8 @@ ol li {
 
 .moto {
   margin-top: 1rem;
-  background: url("../../frontend-assets/image/banner/bannerprofil.png");
+  background: url("../../frontend-assets/image/banner/texture.png");
+  background-color: #63813B;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -2rem;

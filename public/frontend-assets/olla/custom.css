@@ -1,6 +1,7 @@
 
   .destinasi {
-    background: url("../../frontend-assets/image/banner/bannerprofil.png") !important;
+    background-image: url("../../frontend-assets/image/banner/texture.png") ;
+    background-color: #63813B;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -2rem;
@@ -8,7 +9,8 @@
   }
   .info {
     margin-top: 1rem;
-    background: url("../../frontend-assets/image/banner/bannerprofil.png") !important;
+    background: url("../../frontend-assets/image/banner/texture.png") ;
+    background-color: #63813B;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -2rem;
