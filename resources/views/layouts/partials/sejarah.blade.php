@@ -24,7 +24,6 @@
       </ol>
     </div>
     <div class=" col-md-12 col-lg-4 col-sm-10  sejarah__image  ">
-      <img src="https://bogor.apakabarnews.com/wp-content/uploads/2021/06/3F48EE89-A39C-4D4E-AAA8-579369128FB5-e1623951856608.jpeg" alt="sejarah cijujung kota cijujun">
-    </div>
+    <img src="{{asset('/frontend-assets/image/banner/bannerSejarah.JPG')}}" alt="Desa cijujung gambar desa cijujung foto desa cijujung ">    </div>
   </div>
 </div>
