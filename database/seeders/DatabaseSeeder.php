@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             dataPendidikanDesa::class,
             profilDesa::class,
             strukturPemerintahanDesa::class,
+            destinasi::class,
             users::class
         ]);
     }

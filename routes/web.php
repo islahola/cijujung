@@ -43,6 +43,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('desa/agenda/{id}', [App\Http\Controllers\Admin\AgendaController::class, 'update'])->name('admin-update-agenda');
     Route::delete('desa/agenda/{id}', [App\Http\Controllers\Admin\AgendaController::class, 'delete'])->name('admin-agenda-delete');
 
+    Route::get('desa/destinasi', [App\Http\Controllers\Admin\DestinasiController::class, 'index'])->name('admin-destinasi');
+    Route::get('desa/destinasi/tambah', [App\Http\Controllers\Admin\DestinasiController::class, 'add'])->name('admin-tambah-destinasi');
+    Route::post('desa/destinasi', [App\Http\Controllers\Admin\DestinasiController::class, 'create'])->name('admin-destinasi-tambah');
+    Route::get('desa/destinasi/{id}', [App\Http\Controllers\Admin\DestinasiController::class, 'edit'])->name('admin-destinasi-edit');
+    Route::put('desa/destinasi/{id}', [App\Http\Controllers\Admin\DestinasiController::class, 'update'])->name('admin-update-destinasi');
+    Route::delete('desa/destinasi/{id}', [App\Http\Controllers\Admin\DestinasiController::class, 'delete'])->name('admin-destinasi-delete');
+
     Route::get('desa/profil-desa', [App\Http\Controllers\Admin\ProfilDesaController::class, 'index'])->name('admin-profil-desa');
     Route::get('desa/profil-desa/{id}', [App\Http\Controllers\Admin\ProfilDesaController::class, 'edit'])->name('admin-profil-desa-edit');
     Route::put('desa/profil-desa/{id}', [App\Http\Controllers\Admin\ProfilDesaController::class, 'update'])->name('admin-update-profil-desa');

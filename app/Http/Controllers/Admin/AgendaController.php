@@ -51,16 +51,27 @@ class AgendaController extends Controller
     }
 
     public function update(Request $request, $id){
-        $agenda = agenda_desa::find($id);
-        $agenda->update([
-            'nama_agenda' => $request->nama_agenda,
-            'gambar_agenda' => $request->file('gambar_agenda')->store('agenda_desa'),
-            'deskripsi' => $request->deskripsi,
-            'is_active' => $request->is_active,  
-            'user_id' => Auth::id(),
-        ]);
-        // redirect ke halaman index
-        return redirect()->route('admin-agenda')->with('message','success');
+        if(empty($request->file('gambar_agenda'))){
+            $agenda = agenda_desa::find($id);
+            $agenda->update([
+                'nama_agenda' => $request->nama_agenda,
+                'deskripsi' => $request->deskripsi,
+                'is_active' => $request->is_active,  
+                'user_id' => Auth::id(),
+            ]);
+            return redirect()->route('admin-agenda')->with('message','success');
+        }else{
+            $agenda = agenda_desa::find($id);
+            Storage::delete($agenda->gambar_agenda);
+            $agenda->update([
+                'nama_agenda' => $request->nama_agenda,
+                'gambar_agenda' => $request->file('gambar_agenda')->store('agenda_desa'),
+                'deskripsi' => $request->deskripsi,
+                'is_active' => $request->is_active,  
+                'user_id' => Auth::id(),
+            ]);
+            return redirect()->route('admin-agenda')->with('message','success');
+        }
     }
 
     public function delete($id){
